@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				sh 'java-tomcat-sample/.prg.sh'
+				sh './prg.sh'
 			}
 		}
 	}
