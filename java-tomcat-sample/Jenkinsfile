@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				bat('java-tomcat-sample/.prg.sh')
+				bat('mvn -f java-tomcat-sample/pom.xml clean package')
 			}
 		}
 	}
