@@ -12,10 +12,5 @@ pipeline {
                 }
             }
         }
-        stage('staging'){
-            steps{
-                build job: 'staging'
-            }
-        }
     }
 }
